@@ -220,6 +220,24 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
   color: var(--ink-mid);
 }
 
+/* Logo-Bild im Nav (PNG mit transparentem Hintergrund) */
+.nav__brand-logo {
+  height: 44px;
+  width: auto;
+  display: block;
+}
+@media (max-width: 768px) {
+  .nav__brand-logo { height: 34px; }
+}
+
+/* Logo-Bild im Footer (Footer hat hellen Hintergrund — original lassen) */
+.footer__brand-logo {
+  height: 56px;
+  width: auto;
+  display: block;
+  margin-bottom: 12px;
+}
+
 .nav__menu {
   margin-left: auto;
   display: flex;
