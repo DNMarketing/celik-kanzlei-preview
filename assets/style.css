@@ -193,6 +193,14 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
   padding: 14px 0;
   border-bottom-color: rgba(221, 210, 184, .55);
 }
+/* FIX: backdrop-filter zerstört position:fixed des Mobile-Menüs (neues Containing Block).
+   Wenn das Menü offen ist, backdrop-filter komplett entfernen. */
+.nav.is-menu-open,
+.nav.is-menu-open.is-scrolled {
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+  background: transparent !important;
+}
 .nav__inner {
   max-width: var(--maxw);
   margin: 0 auto;
