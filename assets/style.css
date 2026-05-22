@@ -4100,6 +4100,74 @@ a:focus-visible, button:focus-visible {
   /* Anchor-Linie zwischen Sektionen kompakter */
   .section-anchor-line { margin-bottom: 12px; }
   .section--ink-anchor { padding-top: clamp(56px, 12vw, 90px); }
+
+  /* DROP-CAPS auf Mobile abschalten — Initialbuchstaben optisch unstimmig auf Phone */
+  .drop-cap::first-letter,
+  .story-l1__body p:first-child::first-letter,
+  .story-l2__body p:first-child::first-letter,
+  .story-l3__body p:first-child::first-letter {
+    font-size: inherit;
+    line-height: inherit;
+    float: none;
+    margin: 0;
+    color: inherit;
+    font-style: inherit;
+  }
+
+  /* STORY-Sektionen kompakter (Schwerpunkt-Seiten) */
+  .story { padding: clamp(40px, 7vw, 64px) 0; }
+  .story-l1__title, .story-l2__title, .story-l3__title,
+  .story-l4__title, .story-l5__title, .story-l6__title { font-size: 30px; line-height: 1.1; margin-bottom: 18px; }
+  .story-l3__quote { font-size: 24px !important; padding: 0 16px !important; }
+  .story-l3__quote::before, .story-l3__quote::after { font-size: 44px !important; }
+  .story-l2__big-num { font-size: 100px; opacity: .15; }
+
+  /* PAGE-HERO kompakter */
+  .page-hero { padding-top: 92px !important; padding-bottom: 40px !important; }
+  .page-hero__title { font-size: 36px !important; line-height: 1.05 !important; margin-bottom: 16px; }
+  .page-hero__sub { font-size: 15px; line-height: 1.55; }
+
+  /* WORKFLOW-BIG cards: kompaktes Padding */
+  .workflow-big__card { padding: 24px 20px !important; }
+  .workflow-big__num { font-size: 56px !important; top: 8px !important; right: 14px !important; }
+  .workflow-big__title { font-size: 20px; margin: 8px 0 10px; }
+  .workflow-big__body { font-size: 14.5px; line-height: 1.55; }
+
+  /* PARA-HIGHLIGHT kompakter */
+  .para-highlight { gap: 12px; padding: 20px 16px; margin-top: 24px; }
+  .para-highlight__num { font-size: 18px; }
+  .para-highlight__text { font-size: 14.5px; line-height: 1.6; }
+
+  /* HINT-DARK: kleinere Marke + Padding */
+  .hint-dark { padding: 32px 24px 32px 64px !important; }
+  .hint-dark__mark { font-size: 44px !important; }
+  .hint-dark__label { font-size: 10px; }
+  .hint-dark__body { font-size: 15px; line-height: 1.55; }
+
+  /* METRICS-Reihe: tighter */
+  .metrics { gap: 20px; }
+  .metric__big { font-size: 22px; margin-bottom: 4px; }
+  .metric__caption { font-size: 12px; }
+  .metric__sub { font-size: 13.5px; line-height: 1.55; margin-top: 8px; }
+
+  /* MEGA-TIMELINE schmaler */
+  .mega-tl-item { padding: 16px 0 16px 48px !important; }
+  .mega-tl-item__when { font-size: 10px !important; }
+  .mega-tl-item__what { font-size: 16px !important; margin: 4px 0 6px; }
+  .mega-tl-item__detail { font-size: 13.5px !important; line-height: 1.5 !important; }
+
+  /* URGENCY-Banner kompakter */
+  .urgency { padding: 16px 18px; gap: 12px; flex-direction: column; align-items: flex-start; }
+  .urgency__mark { font-size: 9.5px; }
+  .urgency__text { font-size: 14.5px; line-height: 1.55; }
+
+  /* LEAD-GRID & PROSE engere Abstände */
+  .lead-text { font-size: 16.5px !important; line-height: 1.65 !important; }
+  .prose p { font-size: 14.5px; line-height: 1.65; margin-bottom: 12px; }
+
+  /* CTA-BLOCK kompakter */
+  .cta-block__title { font-size: 28px !important; line-height: 1.1; margin-bottom: 12px; }
+  .cta-block__sub { font-size: 15px; line-height: 1.55; margin-bottom: 20px; }
 }
 
 /* Print */
