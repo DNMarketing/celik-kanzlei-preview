@@ -4023,6 +4023,16 @@ a:focus-visible, button:focus-visible {
 }
 
 /* ===================================================
+   MOBILE / DESKTOP — Sichtbarkeits-Utilities
+   =================================================== */
+@media (max-width: 760px) {
+  .d-only { display: none !important; }
+}
+@media (min-width: 761px) {
+  .m-only { display: none !important; }
+}
+
+/* ===================================================
    MOBILE POLISH — Listen-Optik reduzieren, Desktop-Feel
    Alle Änderungen unter 760px, Desktop bleibt unverändert
    =================================================== */
