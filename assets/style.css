@@ -1971,7 +1971,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
   position: fixed;
   left: 50%;
   bottom: 32px;
-  transform: translateX(-50%) translateY(120%);
+  transform: translateX(-50%) translateY(calc(100% + 40px));
   background: var(--ink);
   color: var(--bg-base);
   padding: 14px 26px;
@@ -1983,8 +1983,14 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
   transition: transform .5s var(--ease);
   box-shadow: 0 20px 60px -20px rgba(0,0,0,.4);
   max-width: 90vw;
+  pointer-events: none;
 }
-.toast.is-show { transform: translateX(-50%) translateY(0); }
+.toast.is-show {
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+/* Leerer Toast soll gar nicht angezeigt werden */
+.toast:empty { display: none; }
 
 /* Reveal */
 .reveal {
