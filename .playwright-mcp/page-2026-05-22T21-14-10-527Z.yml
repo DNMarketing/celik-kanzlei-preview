@@ -1,0 +1,193 @@
+- generic [active] [ref=e1]:
+  - link "Zum Inhalt springen" [ref=e2] [cursor=pointer]:
+    - /url: "#top"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Kanzlei Celik · Startseite" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+        - img "Kanzlei Celik · Rechtsanwalt für Steuer- und Insolvenzrecht" [ref=e6]
+      - list "Hauptnavigation" [ref=e7]:
+        - listitem [ref=e8]:
+          - link "Fachgebiete" [ref=e9] [cursor=pointer]:
+            - /url: "#"
+          - list:
+            - listitem: Schwerpunkte
+            - listitem:
+              - link "Unternehmenssteuerrecht Strukturen, Steuern sparen":
+                - /url: unternehmenssteuerrecht.html
+                - text: Unternehmenssteuerrecht
+                - generic: Strukturen, Steuern sparen
+            - listitem:
+              - link "Insolvenzrecht & Sanierung Krisen lösen, Werte erhalten":
+                - /url: insolvenzrecht.html
+                - text: Insolvenzrecht & Sanierung
+                - generic: Krisen lösen, Werte erhalten
+            - listitem
+            - listitem: Weitere Fachgebiete
+            - listitem:
+              - link "Arbeitsrecht":
+                - /url: arbeitsrecht.html
+            - listitem:
+              - link "Mietrecht":
+                - /url: mietrecht.html
+            - listitem:
+              - link "Familienrecht":
+                - /url: familienrecht.html
+        - listitem [ref=e10]:
+          - link "Kanzlei" [ref=e11] [cursor=pointer]:
+            - /url: kanzlei.html
+        - listitem [ref=e12]:
+          - link "Team" [ref=e13] [cursor=pointer]:
+            - /url: team.html
+        - listitem [ref=e14]:
+          - link "Kontakt" [ref=e15] [cursor=pointer]:
+            - /url: kontakt.html
+      - link "Termin vereinbaren" [ref=e16] [cursor=pointer]:
+        - /url: tel:+4971316459840
+  - main [ref=e17]:
+    - generic [ref=e19]:
+      - generic [ref=e20]: Fachgebiet · Familienrecht
+      - heading "Familienrecht · für alle Lebensphasen." [level=1] [ref=e22]:
+        - text: Familienrecht · für alle
+        - emphasis [ref=e23]: Lebensphasen
+        - text: .
+      - paragraph [ref=e24]: Wir beraten in allen Fragen des Familien- und Erbrechts · von Eheverträgen und Vermögensplanung über Unterhalt und Sorgerecht bis zur Nachfolgeregelung.
+      - generic [ref=e25]:
+        - paragraph [ref=e26]: "Familienrecht ist mehr als Trennung. Es ordnet eine ganze Reihe von Lebensbereichen, in denen Recht und persönliche Beziehungen aufeinandertreffen: Heirat und Ehevertrag, Unterhalt und Sorgerecht, Vorsorgevollmacht und Patientenverfügung, Adoption und Abstammung, Nachfolge und Erbe. Vieles davon lässt sich gestalten, bevor ein Konflikt überhaupt entsteht · und genau dort fängt gute Beratung an."
+        - paragraph [ref=e27]: "Wir verstehen Familienrecht daher als langfristige Begleitung. Manche Mandate sind reine Vorsorge: ein Ehevertrag vor der Hochzeit, ein Testament für die nächste Generation, eine Vollmacht für den Notfall. Andere kommen aus akuten Anlässen · Trennung, Erbauseinandersetzung, Sorgerechtskonflikt. In beiden Fällen ist unser Ziel dasselbe: eine Lösung, die zur jeweiligen Familienstruktur passt und über den Tag hinaus trägt."
+    - note [ref=e30]:
+      - generic [ref=e31]: Diskretion
+      - paragraph [ref=e32]: Familienrechtliche Mandate sind sensibel · auch innerhalb der Familie, im Bekanntenkreis und im beruflichen Umfeld. Wir behandeln jedes Gespräch streng vertraulich. Termine außerhalb der regulären Bürozeiten sind möglich, wenn die Situation es erfordert.
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36]: Drei Beratungsfelder
+        - heading "Gestalten, klären, weitergeben." [level=2] [ref=e38]:
+          - text: Gestalten, klären,
+          - emphasis [ref=e39]: weitergeben
+          - text: .
+      - generic [ref=e40]:
+        - article [ref=e41]:
+          - generic: "01"
+          - generic [ref=e42]: Vorsorge & Vermögensgestaltung
+          - heading "Bevor der Ernstfall kommt" [level=3] [ref=e43]:
+            - text: Bevor der
+            - emphasis [ref=e44]: Ernstfall
+            - text: kommt
+          - paragraph [ref=e45]: Eheverträge, eingetragene Partnerschaften, Schenkungsverträge, Vorsorgevollmachten und Patientenverfügungen. Wir gestalten die rechtlichen Rahmen vor, in denen Familie und Vermögen verlässlich funktionieren · bevor eine Krankheit, ein Streit oder ein Todesfall die Lage verändert.
+        - article [ref=e46]:
+          - generic: "02"
+          - generic [ref=e47]: Kinder, Unterhalt & Sorge
+          - heading "Was die Familie regeln muss" [level=3] [ref=e48]:
+            - text: Was die
+            - emphasis [ref=e49]: Familie
+            - text: regeln muss
+          - paragraph [ref=e50]: Sorge- und Umgangsrechtsregelungen für getrennt lebende Eltern, Unterhaltsberechnungen nach Düsseldorfer Tabelle, Vaterschaftsanerkennung, Namensrecht der Kinder, Adoption. Auch außerhalb einer Trennung gibt es viele familienrechtliche Fragen, die geklärt werden wollen.
+        - article [ref=e51]:
+          - generic: "03"
+          - generic [ref=e52]: Erbrecht & Nachfolge
+          - heading "Vermögen weitergeben" [level=3] [ref=e53]:
+            - text: Vermögen
+            - emphasis [ref=e54]: weitergeben
+          - paragraph [ref=e55]: Testaments- und Erbvertragsgestaltung, Pflichtteilsfragen, Auseinandersetzung von Erbengemeinschaften und Verteidigung gegen Pflichtteilsansprüche. Wir beraten auch bei vorweggenommener Erbfolge · etwa wenn ein Familienunternehmen, eine Immobilie oder Wertpapiere noch zu Lebzeiten übertragen werden sollen.
+    - generic [ref=e57]:
+      - generic [ref=e58]:
+        - generic [ref=e59]: 04 · Familienrecht und Vermögen
+        - heading "Wo Familie und Vermögen aufeinandertreffen." [level=2] [ref=e60]:
+          - text: Wo Familie und
+          - emphasis [ref=e61]: Vermögen
+          - text: aufeinandertreffen.
+        - paragraph [ref=e62]: Familienrecht ist oft auch Vermögensrecht · beim Ehevertrag genauso wie bei der Schenkung an die Kinder, bei der Erbauseinandersetzung oder bei der Übertragung eines Familienunternehmens. Wer hier ohne Beratung agiert, riskiert, dass eine gut gemeinte Entscheidung Jahrzehnte später teuer wird.
+        - generic [ref=e63]:
+          - paragraph [ref=e64]: "Wir verbinden familienrechtliche Beratung deshalb mit dem wirtschaftlichen Blick aus unserer Steuerrechts-Expertise: Wie wirkt sich ein Ehevertrag auf die Erbschaftsteuer aus? Welche Schenkungsfreibeträge lassen sich über zehn Jahre optimal nutzen? Wie sichert man ein Familienunternehmen für die nächste Generation, ohne den Pflichtteil zu verletzen? Wir denken die Folgen mit, statt erst hinterher zu reagieren."
+          - paragraph [ref=e65]: Gerade bei Unternehmern und vermögenden Mandanten zählt dieser kombinierte Blick. Wir koordinieren mit Steuerberater, Notar und ggf. Sachverständigen, damit am Ende eine Lösung steht, die nicht nur juristisch sauber, sondern auch wirtschaftlich tragfähig ist · über Generationen.
+      - complementary [ref=e66]:
+        - generic [ref=e67]: Häufige Fragen aus dem Erstgespräch
+        - heading "Was Mandanten meist fragen" [level=4] [ref=e68]
+        - separator [ref=e69]
+        - list [ref=e70]:
+          - listitem [ref=e71]: Brauchen wir wirklich einen Ehevertrag?
+          - listitem [ref=e72]: Was regelt eine Vorsorgevollmacht genau?
+          - listitem [ref=e73]: Wie viel Kindesunterhalt ist angemessen?
+          - listitem [ref=e74]: Wie übertrage ich eine Immobilie zu Lebzeiten?
+          - listitem [ref=e75]: Was ist beim Pflichtteil zu beachten?
+          - listitem [ref=e76]: Wie funktioniert eine Erbauseinandersetzung?
+    - generic [ref=e78]:
+      - generic [ref=e79]: 05 · Gestaltung statt Streit
+      - paragraph [ref=e80]:
+        - text: “ Das meiste Familienrecht passiert
+        - emphasis [ref=e81]: bevor
+        - text: es ein Problem gibt. ”
+      - generic [ref=e82]:
+        - paragraph [ref=e83]: "Ein Ehevertrag schreibt nicht das Ende vor · er klärt nur Fragen, die ohnehin irgendwann beantwortet werden müssen. Ein Testament regelt nicht den Streit unter den Erben · es verhindert ihn. Vieles im Familienrecht ist Gestaltung: heute klar formulieren, was später nicht mehr verhandelbar wäre."
+        - paragraph [ref=e84]: "Wo Konflikte trotzdem entstehen, ist unsere Linie konstant: zuerst die einvernehmliche Lösung. Wo nötig, vor dem Familien- oder Nachlassgericht · in Heilbronn, Siegen oder dem zuständigen Gericht. Ohne unnötige Schärfe, aber mit klarer Linie."
+      - paragraph [ref=e85]: Gestaltung · Beratung · Vertretung
+    - generic [ref=e88]:
+      - generic [ref=e89]: Kontakt
+      - heading "Eine familienrechtliche Frage?" [level=2] [ref=e91]:
+        - text: Eine familienrechtliche
+        - emphasis [ref=e92]: Frage
+        - text: "?"
+      - paragraph [ref=e93]: Schreiben Sie uns kurz, worum es geht. Wir antworten diskret und innerhalb eines Werktages.
+      - link "Kontaktanfrage" [ref=e95] [cursor=pointer]:
+        - /url: kontakt.html#anfrage
+      - link "07131 · 64 59 840 →" [ref=e97] [cursor=pointer]:
+        - /url: tel:+4971316459840
+        - text: 07131 · 64 59 840
+        - generic [ref=e98]: →
+    - generic [ref=e101]:
+      - link "← Zurück zu den Schwerpunkten" [ref=e102] [cursor=pointer]:
+        - /url: index.html#schwerpunkte
+      - generic [ref=e103]:
+        - link "Arbeitsrecht" [ref=e104] [cursor=pointer]:
+          - /url: arbeitsrecht.html
+        - text: ·
+        - link "Mietrecht" [ref=e105] [cursor=pointer]:
+          - /url: mietrecht.html
+  - contentinfo [ref=e106]:
+    - generic [ref=e107]:
+      - img "Kanzlei Celik" [ref=e110]
+      - generic [ref=e111]:
+        - generic [ref=e112]: Schwerpunkte
+        - generic [ref=e113]:
+          - link "Unternehmenssteuerrecht" [ref=e114] [cursor=pointer]:
+            - /url: unternehmenssteuerrecht.html
+          - link "Insolvenzrecht" [ref=e115] [cursor=pointer]:
+            - /url: insolvenzrecht.html
+        - generic [ref=e116]: Weitere Fachgebiete
+        - generic [ref=e117]:
+          - link "Arbeitsrecht" [ref=e118] [cursor=pointer]:
+            - /url: arbeitsrecht.html
+          - link "Mietrecht" [ref=e119] [cursor=pointer]:
+            - /url: mietrecht.html
+          - link "Familienrecht" [ref=e120] [cursor=pointer]:
+            - /url: familienrecht.html
+      - generic [ref=e121]:
+        - generic [ref=e122]: Kanzlei
+        - generic [ref=e123]:
+          - link "Über uns" [ref=e124] [cursor=pointer]:
+            - /url: kanzlei.html
+          - link "Team" [ref=e125] [cursor=pointer]:
+            - /url: team.html
+          - link "Kontakt" [ref=e126] [cursor=pointer]:
+            - /url: kontakt.html
+        - generic [ref=e127]: Rechtliches
+        - generic [ref=e128]:
+          - link "Impressum" [ref=e129] [cursor=pointer]:
+            - /url: impressum.html
+          - link "Datenschutz" [ref=e130] [cursor=pointer]:
+            - /url: datenschutz.html
+    - generic [ref=e131]:
+      - generic [ref=e132]: © 2026 Rechtsanwaltskanzlei Celik · Alle Rechte vorbehalten
+      - link "kanzlei@steuer-recht-celik.de" [ref=e133] [cursor=pointer]:
+        - /url: mailto:kanzlei@steuer-recht-celik.de
+      - generic [ref=e134]:
+        - text: Karten ©
+        - link "OpenStreetMap" [ref=e135] [cursor=pointer]:
+          - /url: https://www.openstreetmap.org/copyright
+        - text: ·
+        - link "CARTO" [ref=e136] [cursor=pointer]:
+          - /url: https://carto.com/attributions
+  - link "Erstberatung anfragen · anrufen" [ref=e137] [cursor=pointer]:
+    - /url: tel:+4971316459840
+    - img [ref=e139]
+    - generic [ref=e141]: 07131 · 64 59 840

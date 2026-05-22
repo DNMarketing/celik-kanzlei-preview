@@ -1,0 +1,159 @@
+- generic [active] [ref=e1]:
+  - link "Zum Inhalt springen" [ref=e2] [cursor=pointer]:
+    - /url: "#top"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Kanzlei Celik · Startseite" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+        - img "Kanzlei Celik · Rechtsanwalt für Steuer- und Insolvenzrecht" [ref=e6]
+      - button "Menü öffnen" [ref=e7] [cursor=pointer]
+  - main [ref=e10]:
+    - generic [ref=e12]:
+      - generic [ref=e13]: Fachgebiet · Familienrecht
+      - heading "Familienrecht · für alle Lebensphasen." [level=1] [ref=e15]:
+        - text: Familienrecht · für alle
+        - emphasis [ref=e16]: Lebensphasen
+        - text: .
+      - paragraph [ref=e17]: Vom Ehevertrag bis zur Nachfolge · Familienrecht und Erbrecht.
+      - generic [ref=e18]:
+        - paragraph [ref=e19]: Familienrecht ist mehr als Trennung · gute Beratung beginnt vor dem Konflikt.
+        - paragraph [ref=e20]: Vorsorge oder akut · eine Lösung, die zur Familie passt und trägt.
+    - note [ref=e23]:
+      - generic [ref=e24]: Diskretion
+      - paragraph [ref=e25]: Sensible Mandate · streng vertraulich. Termine außerhalb der Bürozeiten möglich.
+    - generic [ref=e27]:
+      - generic [ref=e28]:
+        - generic [ref=e29]: Drei Beratungsfelder
+        - heading "Gestalten, klären, weitergeben." [level=2] [ref=e31]:
+          - text: Gestalten, klären,
+          - emphasis [ref=e32]: weitergeben
+          - text: .
+      - generic [ref=e33]:
+        - article [ref=e34]:
+          - generic: "01"
+          - generic [ref=e35]: Vorsorge & Vermögensgestaltung
+          - heading "Bevor der Ernstfall kommt" [level=3] [ref=e36]:
+            - text: Bevor der
+            - emphasis [ref=e37]: Ernstfall
+            - text: kommt
+          - paragraph [ref=e38]: Ehevertrag, Schenkung, Vorsorge · klare Rahmen, bevor der Ernstfall kommt.
+        - article [ref=e39]:
+          - generic: "02"
+          - generic [ref=e40]: Kinder, Unterhalt & Sorge
+          - heading "Was die Familie regeln muss" [level=3] [ref=e41]:
+            - text: Was die
+            - emphasis [ref=e42]: Familie
+            - text: regeln muss
+          - paragraph [ref=e43]: Sorge, Umgang, Unterhalt nach Düsseldorfer Tabelle · klar geregelt.
+        - article [ref=e44]:
+          - generic: "03"
+          - generic [ref=e45]: Erbrecht & Nachfolge
+          - heading "Vermögen weitergeben" [level=3] [ref=e46]:
+            - text: Vermögen
+            - emphasis [ref=e47]: weitergeben
+          - paragraph [ref=e48]: Testament, Pflichtteil, Erbengemeinschaft · auch vorweggenommene Erbfolge.
+    - generic [ref=e50]:
+      - generic [ref=e51]:
+        - generic [ref=e52]: 04 · Familienrecht und Vermögen
+        - heading "Wo Familie und Vermögen aufeinandertreffen." [level=2] [ref=e53]:
+          - text: Wo Familie und
+          - emphasis [ref=e54]: Vermögen
+          - text: aufeinandertreffen.
+        - paragraph [ref=e55]: Familienrecht ist auch Vermögensrecht · gute Absicht wird sonst teuer.
+        - generic [ref=e56]:
+          - paragraph [ref=e57]: Familienrecht plus Steuerblick · Folgen mitgedacht, nicht hinterher repariert.
+          - paragraph [ref=e58]: Für Unternehmer · juristisch sauber, wirtschaftlich tragfähig, über Generationen.
+      - complementary [ref=e59]:
+        - generic [ref=e60]: Häufige Fragen aus dem Erstgespräch
+        - heading "Was Mandanten meist fragen" [level=4] [ref=e61]
+        - separator [ref=e62]
+        - list [ref=e63]:
+          - listitem [ref=e64]: Brauchen wir wirklich einen Ehevertrag?
+          - listitem [ref=e65]: Was regelt eine Vorsorgevollmacht genau?
+          - listitem [ref=e66]: Wie viel Kindesunterhalt ist angemessen?
+          - listitem [ref=e67]: Wie übertrage ich eine Immobilie zu Lebzeiten?
+          - listitem [ref=e68]: Was ist beim Pflichtteil zu beachten?
+          - listitem [ref=e69]: Wie funktioniert eine Erbauseinandersetzung?
+    - generic [ref=e71]:
+      - generic [ref=e72]: 05 · Gestaltung statt Streit
+      - paragraph [ref=e73]:
+        - text: “ Das meiste Familienrecht passiert
+        - emphasis [ref=e74]: bevor
+        - text: es ein Problem gibt. ”
+      - generic [ref=e75]:
+        - paragraph [ref=e76]: Ehevertrag und Testament verhindern Streit · heute klar, später nicht verhandelbar.
+        - paragraph [ref=e77]: Zuerst einvernehmlich · sonst vor Gericht, ohne Schärfe, mit Linie.
+      - paragraph [ref=e78]: Gestaltung · Beratung · Vertretung
+    - generic [ref=e81]:
+      - generic [ref=e82]: Kontakt
+      - heading "Eine familienrechtliche Frage?" [level=2] [ref=e84]:
+        - text: Eine familienrechtliche
+        - emphasis [ref=e85]: Frage
+        - text: "?"
+      - paragraph [ref=e86]: Kurze Nachricht · diskrete Antwort innerhalb eines Werktags.
+      - link "Kontaktanfrage" [ref=e88] [cursor=pointer]:
+        - /url: kontakt.html#anfrage
+      - link "07131 · 64 59 840 →" [ref=e90] [cursor=pointer]:
+        - /url: tel:+4971316459840
+        - text: 07131 · 64 59 840
+        - generic [ref=e91]: →
+    - generic [ref=e94]:
+      - link "← Zurück zu den Schwerpunkten" [ref=e95] [cursor=pointer]:
+        - /url: index.html#schwerpunkte
+      - generic [ref=e96]:
+        - link "Arbeitsrecht" [ref=e97] [cursor=pointer]:
+          - /url: arbeitsrecht.html
+        - text: ·
+        - link "Mietrecht" [ref=e98] [cursor=pointer]:
+          - /url: mietrecht.html
+  - contentinfo [ref=e99]:
+    - generic [ref=e100]:
+      - img "Kanzlei Celik" [ref=e103]
+      - generic [ref=e104]:
+        - generic [ref=e105]: Schwerpunkte
+        - generic [ref=e106]:
+          - link "Unternehmenssteuerrecht" [ref=e107] [cursor=pointer]:
+            - /url: unternehmenssteuerrecht.html
+          - link "Insolvenzrecht" [ref=e108] [cursor=pointer]:
+            - /url: insolvenzrecht.html
+        - generic [ref=e109]: Weitere Fachgebiete
+        - generic [ref=e110]:
+          - link "Arbeitsrecht" [ref=e111] [cursor=pointer]:
+            - /url: arbeitsrecht.html
+          - link "Mietrecht" [ref=e112] [cursor=pointer]:
+            - /url: mietrecht.html
+          - link "Familienrecht" [ref=e113] [cursor=pointer]:
+            - /url: familienrecht.html
+      - generic [ref=e114]:
+        - generic [ref=e115]: Kanzlei
+        - generic [ref=e116]:
+          - link "Über uns" [ref=e117] [cursor=pointer]:
+            - /url: kanzlei.html
+          - link "Team" [ref=e118] [cursor=pointer]:
+            - /url: team.html
+          - link "Kontakt" [ref=e119] [cursor=pointer]:
+            - /url: kontakt.html
+        - generic [ref=e120]: Rechtliches
+        - generic [ref=e121]:
+          - link "Impressum" [ref=e122] [cursor=pointer]:
+            - /url: impressum.html
+          - link "Datenschutz" [ref=e123] [cursor=pointer]:
+            - /url: datenschutz.html
+    - generic [ref=e124]:
+      - generic [ref=e125]: © 2026 Rechtsanwaltskanzlei Celik · Alle Rechte vorbehalten
+      - link "kanzlei@steuer-recht-celik.de" [ref=e126] [cursor=pointer]:
+        - /url: mailto:kanzlei@steuer-recht-celik.de
+      - generic [ref=e127]:
+        - text: Karten ©
+        - link "OpenStreetMap" [ref=e128] [cursor=pointer]:
+          - /url: https://www.openstreetmap.org/copyright
+        - text: ·
+        - link "CARTO" [ref=e129] [cursor=pointer]:
+          - /url: https://carto.com/attributions
+  - complementary "Schnellkontakt" [ref=e130]:
+    - link "Kanzlei anrufen" [ref=e131] [cursor=pointer]:
+      - /url: tel:+4971316459840
+      - text: Anrufen
+    - link "Anfrage senden" [ref=e132] [cursor=pointer]:
+      - /url: kontakt.html#anfrage
+      - text: Anfrage

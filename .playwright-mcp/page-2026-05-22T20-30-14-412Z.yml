@@ -1,0 +1,328 @@
+- generic [active] [ref=e1]:
+  - link "Zum Inhalt springen" [ref=e2] [cursor=pointer]:
+    - /url: "#top"
+  - banner [ref=e3]:
+    - generic [ref=e4]:
+      - link "Kanzlei Celik · Startseite" [ref=e5] [cursor=pointer]:
+        - /url: index.html
+        - img "Kanzlei Celik · Rechtsanwalt für Steuer- und Insolvenzrecht" [ref=e6]
+      - button "Menü öffnen" [ref=e7] [cursor=pointer]
+  - main [ref=e10]:
+    - generic [ref=e12]:
+      - generic [ref=e13]:
+        - generic [ref=e14]: Rechtsanwaltskanzlei · Heilbronn · Siegen
+        - heading "Klarheit im Unternehmenssteuerrecht und Insolvenzrecht ." [level=1] [ref=e16]:
+          - text: Klarheit im
+          - emphasis [ref=e17]: Unternehmenssteuerrecht
+          - text: und
+          - emphasis [ref=e18]: Insolvenzrecht
+          - text: .
+        - paragraph [ref=e19]: "Wir beraten Unternehmer und Geschäftsführer dort, wo es um die wirtschaftliche Substanz geht: bei der Gestaltung von Strukturen, die Steuern sparen, und bei der Bewältigung von Krisen, die das Unternehmen bedrohen."
+        - generic [ref=e20]:
+          - link "Anfrage senden" [ref=e21] [cursor=pointer]:
+            - /url: "#anfrage"
+          - link "Schwerpunkte ansehen →" [ref=e22] [cursor=pointer]:
+            - /url: "#schwerpunkte"
+            - text: Schwerpunkte ansehen
+            - generic [ref=e23]: →
+      - generic [ref=e24]:
+        - img "Rechtsanwalt Seyhmus Celik, Inhaber der Kanzlei Celik" [ref=e26]
+        - generic [ref=e27]:
+          - generic [ref=e28]: Rechtsanwalt
+          - generic [ref=e29]: Seyhmus Celik
+    - generic [ref=e31]:
+      - generic [ref=e32]:
+        - generic [ref=e33]: Unsere Mission
+        - heading "Wissen, das die meisten Unternehmer nicht haben." [level=2] [ref=e35]:
+          - text: Wissen, das die meisten Unternehmer
+          - emphasis [ref=e36]: nicht haben
+          - text: .
+        - generic [ref=e37]:
+          - paragraph [ref=e38]: "Den meisten Unternehmern in Deutschland fehlt eine konkrete Vorstellung davon, wie sie über kluge Strukturen Steuern sparen können · sechs- oder siebenstellig pro Jahr ist keine Seltenheit. In Krisensituationen kommt hinzu: Was im Insolvenzrecht möglich ist, weiß kaum jemand, der nicht selbst Anwalt ist."
+          - paragraph [ref=e39]: Wir machen dieses Wissen verfügbar. Bevor Strukturen umgebaut werden, bevor Anträge gestellt werden, bevor das Finanzamt fragt. Klar, ohne Floskeln, in der Sprache des Unternehmers, nicht in der des Anwalts.
+      - generic [ref=e40]:
+        - generic [ref=e41]:
+          - paragraph [ref=e43]:
+            - emphasis [ref=e44]: Steuern sparen
+          - paragraph [ref=e45]: durch klügere Strukturen
+        - generic [ref=e47]:
+          - paragraph [ref=e49]:
+            - emphasis [ref=e50]: Krisen lösen
+          - paragraph [ref=e51]: mit dem ganzen Werkzeugkasten
+    - generic [ref=e53]:
+      - generic [ref=e54]: Unternehmenssteuerrecht
+      - generic [ref=e55]: ◆
+      - generic [ref=e56]: Insolvenzrecht
+      - generic [ref=e57]: ◆
+      - generic [ref=e58]: Sanierung & Restrukturierung
+      - generic [ref=e59]: ◆
+      - generic [ref=e60]: Umstrukturierungen
+      - generic [ref=e61]: ◆
+      - generic [ref=e62]: Arbeitsrecht
+      - generic [ref=e63]: ◆
+      - generic [ref=e64]: Mietrecht
+      - generic [ref=e65]: ◆
+      - generic [ref=e66]: Familienrecht
+      - generic [ref=e67]: ◆
+      - generic [ref=e68]: Unternehmenssteuerrecht
+      - generic [ref=e69]: ◆
+      - generic [ref=e70]: Insolvenzrecht
+      - generic [ref=e71]: ◆
+      - generic [ref=e72]: Sanierung & Restrukturierung
+      - generic [ref=e73]: ◆
+      - generic [ref=e74]: Umstrukturierungen
+      - generic [ref=e75]: ◆
+      - generic [ref=e76]: Arbeitsrecht
+      - generic [ref=e77]: ◆
+      - generic [ref=e78]: Mietrecht
+      - generic [ref=e79]: ◆
+      - generic [ref=e80]: Familienrecht
+      - generic [ref=e81]: ◆
+    - generic [ref=e83]:
+      - generic [ref=e84]:
+        - generic [ref=e85]: Unsere Schwerpunkte
+        - 'heading "Zwei Disziplinen, ein Anspruch: Lösungen, die wirtschaftlich tragen." [level=2] [ref=e87]':
+          - text: Zwei Disziplinen, ein
+          - emphasis [ref=e88]: Anspruch
+          - text: ": Lösungen, die wirtschaftlich tragen."
+        - paragraph [ref=e89]: Unternehmenssteuerrecht und Insolvenzrecht aus einer Hand. Diese Kombination ist selten und gerade in der Krise wertvoll. Wir denken steuerlich vorausschauend und kennen die Mechanik der Sanierung.
+      - generic [ref=e90]:
+        - article [ref=e91]:
+          - generic: "01"
+          - generic [ref=e92]: Schwerpunkt
+          - heading "Unternehmenssteuerrecht" [level=3] [ref=e93]:
+            - text: Unternehmens
+            - emphasis [ref=e94]: steuerrecht
+          - paragraph [ref=e95]: Wir gestalten steuerliche Strukturen, bevor das Finanzamt es tut. Holdings, Konzernumstrukturierungen, Nachfolgen, Betriebsprüfungen, Steuerstrafverfahren.
+          - list [ref=e96]:
+            - listitem [ref=e97]: ◆Umstrukturierungen nach UmwStG
+            - listitem [ref=e98]: ◆Holding-Strukturen
+            - listitem [ref=e99]: ◆Unternehmensnachfolge
+            - listitem [ref=e100]: ◆Betriebsprüfungen
+            - listitem [ref=e101]: ◆Steuerstrafverfahren
+            - listitem [ref=e102]: ◆Internationales Steuerrecht
+          - link "Mehr erfahren →" [ref=e103] [cursor=pointer]:
+            - /url: unternehmenssteuerrecht.html
+            - text: Mehr erfahren
+            - generic [ref=e104]: →
+        - article [ref=e105]:
+          - generic: "02"
+          - generic [ref=e106]: Schwerpunkt
+          - heading "Insolvenzrecht" [level=3] [ref=e107]:
+            - emphasis [ref=e108]: Insolvenz
+            - text: recht
+          - paragraph [ref=e109]: Wenn Liquidität bedroht ist, zählt jede Woche. Wir prüfen die Lage, sichern Werte und prüfen alle Optionen · vom Schutzschirm über die Eigenverwaltung bis zur geordneten Abwicklung.
+          - list [ref=e110]:
+            - listitem [ref=e111]: ◆Krisenberatung & StaRUG
+            - listitem [ref=e112]: ◆Insolvenzantrag & § 15a InsO
+            - listitem [ref=e113]: ◆Eigenverwaltung & Schutzschirm
+            - listitem [ref=e114]: ◆Geschäftsführerhaftung
+            - listitem [ref=e115]: ◆Regelinsolvenzverfahren
+            - listitem [ref=e116]: ◆Verbraucherinsolvenz
+          - link "Mehr erfahren →" [ref=e117] [cursor=pointer]:
+            - /url: insolvenzrecht.html
+            - text: Mehr erfahren
+            - generic [ref=e118]: →
+    - generic [ref=e120]:
+      - blockquote [ref=e122]:
+        - paragraph [ref=e123]:
+          - text: „Recht ist kein Selbstzweck. Es muss Ihrem
+          - emphasis [ref=e124]: Leben
+          - text: und Ihrem
+          - emphasis [ref=e125]: Unternehmen
+          - text: dienen · oder es taugt nichts.“
+        - generic [ref=e126]: — Seyhmus Celik, Rechtsanwalt & Kanzleiinhaber
+      - generic [ref=e127]:
+        - article [ref=e128]:
+          - generic [ref=e129]: "01"
+          - heading "Vorausschauend statt reaktiv" [level=3] [ref=e130]
+          - paragraph [ref=e131]: Frühe Beratung verhindert Krisen. Wir setzen früh an, solange Gestaltungsspielraum besteht.
+        - article [ref=e132]:
+          - generic [ref=e133]: "02"
+          - heading "Wirtschaftlich denken, juristisch handeln" [level=3] [ref=e134]
+          - paragraph [ref=e135]: Erst das Ziel des Mandanten, dann der Paragraph. Recht ist Werkzeug, nicht Selbstzweck.
+        - article [ref=e136]:
+          - generic [ref=e137]: "03"
+          - heading "Klartext, kein Fachchinesisch" [level=3] [ref=e138]
+          - paragraph [ref=e139]: Mandanten verlassen unsere Kanzlei mit klarem Bild · nicht mit Zettel voller Fachbegriffe.
+        - link "Mehr über die Kanzlei →" [ref=e140] [cursor=pointer]:
+          - /url: kanzlei.html
+          - text: Mehr über die Kanzlei
+          - generic [ref=e141]: →
+    - generic [ref=e143]:
+      - generic [ref=e144]:
+        - generic [ref=e145]: Standorte
+        - heading "An zwei Orten. Mit einer Handschrift." [level=2] [ref=e147]:
+          - text: An zwei Orten. Mit
+          - emphasis [ref=e148]: einer Handschrift
+          - text: .
+      - generic [ref=e149]:
+        - link "Hauptsitz · Baden-Württemberg Heilbronn Austraße 34 · 74076 Heilbronn Mo – Fr · 8:00 – 18:00 Uhr 07131 · 64 59 840 Anfahrt & Details →" [ref=e150] [cursor=pointer]:
+          - /url: kontakt.html#heilbronn
+          - generic [ref=e151]: Hauptsitz · Baden-Württemberg
+          - heading "Heilbronn" [level=3] [ref=e152]
+          - paragraph [ref=e153]: Austraße 34 · 74076 Heilbronn
+          - paragraph [ref=e154]: Mo – Fr · 8:00 – 18:00 Uhr
+          - generic [ref=e155]: 07131 · 64 59 840
+          - generic [ref=e156]:
+            - text: Anfahrt & Details
+            - generic [ref=e157]: →
+        - link "Zweigstelle · Nordrhein-Westfalen Siegen Friedberger Straße 28 · 57074 Siegen Mo – Fr · 9:00 – 15:00 Uhr 0271 · 4993 9140 Anfahrt & Details →" [ref=e158] [cursor=pointer]:
+          - /url: kontakt.html#siegen
+          - generic [ref=e159]: Zweigstelle · Nordrhein-Westfalen
+          - heading "Siegen" [level=3] [ref=e160]
+          - paragraph [ref=e161]: Friedberger Straße 28 · 57074 Siegen
+          - paragraph [ref=e162]: Mo – Fr · 9:00 – 15:00 Uhr
+          - generic [ref=e163]: 0271 · 4993 9140
+          - generic [ref=e164]:
+            - text: Anfahrt & Details
+            - generic [ref=e165]: →
+    - generic [ref=e167]:
+      - generic [ref=e168]:
+        - generic [ref=e169]: Ablauf
+        - heading "So läuft Ihre Erstberatung ab." [level=2] [ref=e171]:
+          - text: So läuft Ihre Erstberatung
+          - emphasis [ref=e172]: ab
+          - text: .
+        - paragraph [ref=e173]: Vier Schritte vom ersten Kontakt bis zur klaren Strategie. Keine Hürden, keine versteckten Kosten.
+      - list [ref=e174]:
+        - listitem [ref=e175]:
+          - generic [ref=e176]: "01"
+          - heading "Kontaktaufnahme" [level=3] [ref=e177]
+          - paragraph [ref=e178]: Telefon, E-Mail oder Formular. Sie schildern kurz, worum es geht.
+        - listitem [ref=e179]:
+          - generic [ref=e180]: "02"
+          - heading "Ersteinschätzung" [level=3] [ref=e181]
+          - paragraph [ref=e182]: Wir ordnen Ihr Anliegen ein und sagen, ob ein Mandat sinnvoll ist.
+        - listitem [ref=e183]:
+          - generic [ref=e184]: "03"
+          - heading "Beratungsgespräch" [level=3] [ref=e185]
+          - paragraph [ref=e186]: Persönlich vor Ort oder per Videoschalte. Wir gehen Ihre Lage durch.
+        - listitem [ref=e187]:
+          - generic [ref=e188]: "04"
+          - heading "Individuelle Strategie" [level=3] [ref=e189]
+          - paragraph [ref=e190]: Ein klarer Plan, schriftlich, mit Aufwand und Kostenrahmen.
+    - generic [ref=e193]:
+      - paragraph [ref=e194]:
+        - text: Über die Schwerpunkte hinaus beraten wir in
+        - link "Arbeitsrecht" [ref=e195] [cursor=pointer]:
+          - /url: arbeitsrecht.html
+        - text: ","
+        - link "Mietrecht" [ref=e196] [cursor=pointer]:
+          - /url: mietrecht.html
+        - text: und
+        - link "Familienrecht" [ref=e197] [cursor=pointer]:
+          - /url: familienrecht.html
+        - text: .
+      - link "Kontakt aufnehmen →" [ref=e198] [cursor=pointer]:
+        - /url: "#anfrage"
+        - text: Kontakt aufnehmen
+        - generic [ref=e199]: →
+    - generic [ref=e203]:
+      - generic [ref=e204]:
+        - generic [ref=e205]: Kontaktanfrage
+        - heading "Schreiben Sie uns direkt." [level=2] [ref=e207]:
+          - text: Schreiben Sie uns
+          - emphasis [ref=e208]: direkt
+          - text: .
+        - paragraph [ref=e209]: Schildern Sie kurz Ihr Anliegen. Wenn relevant, können Sie Unterlagen gleich mitsenden · verschlüsselt und vertraulich. Wir melden uns innerhalb eines Werktages.
+        - list [ref=e210]:
+          - listitem [ref=e211]: ◆ SSL-verschlüsselte Übertragung
+          - listitem [ref=e212]: ◆ Speicherung ausschließlich auf deutschen Servern
+          - listitem [ref=e213]: ◆ Anwaltliche Schweigepflicht nach § 43a BRAO
+        - generic [ref=e214]:
+          - generic [ref=e215]: Lieber direkt sprechen?
+          - link "07131 · 64 59 840" [ref=e216] [cursor=pointer]:
+            - /url: tel:+4971316459840
+      - generic [ref=e217]:
+        - generic [ref=e218]:
+          - generic [ref=e219]:
+            - generic [ref=e220]: Vorname
+            - textbox "Vorname" [ref=e221]
+          - generic [ref=e222]:
+            - generic [ref=e223]: Nachname
+            - textbox "Nachname" [ref=e224]
+        - generic [ref=e225]:
+          - generic [ref=e226]:
+            - generic [ref=e227]: E-Mail
+            - textbox "E-Mail" [ref=e228]
+          - generic [ref=e229]:
+            - generic [ref=e230]: Telefon
+            - textbox "Telefon" [ref=e231]
+        - generic [ref=e232]:
+          - generic [ref=e233]: Rechtsgebiet
+          - combobox "Rechtsgebiet" [ref=e234] [cursor=pointer]:
+            - option "Bitte wählen" [selected]
+            - option "Insolvenzrecht"
+            - option "Unternehmenssteuerrecht"
+            - option "Arbeitsrecht"
+            - option "Mietrecht"
+            - option "Familienrecht"
+            - option "Anderes Anliegen"
+        - generic [ref=e235]:
+          - generic [ref=e236]: Anliegen
+          - textbox "Anliegen" [ref=e237]:
+            - /placeholder: "In wenigen Sätzen: worum geht es?"
+        - button "⬆ Dokumente hochladen PDF, JPG, PNG, DOCX · max. 25 MB pro Datei · optional" [ref=e238] [cursor=pointer]:
+          - generic [ref=e239]: ⬆
+          - generic [ref=e240]: Dokumente hochladen
+          - generic [ref=e241]: PDF, JPG, PNG, DOCX · max. 25 MB pro Datei · optional
+        - generic [ref=e242]:
+          - checkbox "Ich willige ein, dass meine Angaben und Dateien zur Bearbeitung meiner Anfrage gespeichert werden. Hinweise zur Verarbeitung in der Datenschutzerklärung." [ref=e243] [cursor=pointer]
+          - generic [ref=e244]:
+            - text: Ich willige ein, dass meine Angaben und Dateien zur Bearbeitung meiner Anfrage gespeichert werden. Hinweise zur Verarbeitung in der
+            - link "Datenschutzerklärung" [ref=e245] [cursor=pointer]:
+              - /url: datenschutz.html
+            - text: .
+        - button "Anfrage senden" [ref=e246] [cursor=pointer]
+  - contentinfo [ref=e247]:
+    - generic [ref=e248]:
+      - img "Kanzlei Celik" [ref=e251]
+      - generic [ref=e252]:
+        - generic [ref=e253]: Schwerpunkte
+        - generic [ref=e254]:
+          - link "Unternehmenssteuerrecht" [ref=e255] [cursor=pointer]:
+            - /url: unternehmenssteuerrecht.html
+          - link "Insolvenzrecht" [ref=e256] [cursor=pointer]:
+            - /url: insolvenzrecht.html
+        - generic [ref=e257]: Weitere Fachgebiete
+        - generic [ref=e258]:
+          - link "Arbeitsrecht" [ref=e259] [cursor=pointer]:
+            - /url: arbeitsrecht.html
+          - link "Mietrecht" [ref=e260] [cursor=pointer]:
+            - /url: mietrecht.html
+          - link "Familienrecht" [ref=e261] [cursor=pointer]:
+            - /url: familienrecht.html
+      - generic [ref=e262]:
+        - generic [ref=e263]: Kanzlei
+        - generic [ref=e264]:
+          - link "Über uns" [ref=e265] [cursor=pointer]:
+            - /url: kanzlei.html
+          - link "Team" [ref=e266] [cursor=pointer]:
+            - /url: team.html
+          - link "Kontakt" [ref=e267] [cursor=pointer]:
+            - /url: kontakt.html
+        - generic [ref=e268]: Rechtliches
+        - generic [ref=e269]:
+          - link "Impressum" [ref=e270] [cursor=pointer]:
+            - /url: impressum.html
+          - link "Datenschutz" [ref=e271] [cursor=pointer]:
+            - /url: datenschutz.html
+    - generic [ref=e272]:
+      - generic [ref=e273]: © 2026 Rechtsanwaltskanzlei Celik · Alle Rechte vorbehalten
+      - link "kanzlei@steuer-recht-celik.de" [ref=e274] [cursor=pointer]:
+        - /url: mailto:kanzlei@steuer-recht-celik.de
+      - generic [ref=e275]:
+        - text: Karten ©
+        - link "OpenStreetMap" [ref=e276] [cursor=pointer]:
+          - /url: https://www.openstreetmap.org/copyright
+        - text: ·
+        - link "CARTO" [ref=e277] [cursor=pointer]:
+          - /url: https://carto.com/attributions
+  - complementary "Schnellkontakt" [ref=e278]:
+    - link "Kanzlei anrufen" [ref=e279] [cursor=pointer]:
+      - /url: tel:+4971316459840
+      - text: Anrufen
+    - link "Anfrage senden" [ref=e280] [cursor=pointer]:
+      - /url: kontakt.html#anfrage
+      - text: Anfrage
