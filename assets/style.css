@@ -4031,26 +4031,10 @@ a:focus-visible, button:focus-visible {
   :root { --section-pad: clamp(48px, 9vw, 72px); }
   .section { padding-top: clamp(40px, 7vw, 64px); padding-bottom: clamp(40px, 7vw, 64px); }
 
-  /* HERO — Portrait deutlich kompakter, näher am Text */
+  /* HERO — Padding/Abstände kompakter (Portrait bleibt wie vorher) */
   .hero { padding-top: 96px; }
-  .hero__inner { gap: 28px; }
-  .hero__portrait {
-    max-width: 220px !important;
-    margin: 0 auto;
-    order: -1; /* Portrait über Text, wie Profil-Header */
-  }
-  .hero__portrait-frame { aspect-ratio: 1 / 1; }
-  .hero__portrait-frame img { object-position: center 18%; }
-  .hero__badge {
-    left: auto !important;
-    right: -8px;
-    bottom: -14px !important;
-    padding: 10px 14px !important;
-  }
-  .hero__badge-label { font-size: 9.5px; }
-  .hero__badge-name { font-size: 16px; }
-  .hero__title { margin: 14px 0 18px; }
-  .hero__sub { margin-bottom: 28px; }
+  .hero__title { margin: 18px 0 24px; }
+  .hero__sub { margin-bottom: 32px; }
 
   /* FOCUS-CARDS — kürzer, kein leerer Block */
   .focus__card { min-height: auto; padding: 32px 26px; }
