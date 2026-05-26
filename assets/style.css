@@ -233,9 +233,17 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
   height: 64px;
   width: auto;
   display: block;
+  padding: 6px 12px;
+  border: 1.5px solid var(--gold);
+  border-radius: 2px;
+  box-sizing: content-box;
+  transition: border-color .3s var(--ease), box-shadow .3s var(--ease);
+}
+.nav__brand:hover .nav__brand-logo {
+  border-color: var(--gold-dark);
 }
 @media (max-width: 768px) {
-  .nav__brand-logo { height: 44px; }
+  .nav__brand-logo { height: 44px; padding: 4px 9px; }
 }
 
 /* Logo-Bild im Footer (Footer hat hellen Hintergrund — original lassen) */
@@ -244,6 +252,10 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
   width: auto;
   display: block;
   margin-bottom: 12px;
+  padding: 8px 14px;
+  border: 1.5px solid var(--gold);
+  border-radius: 2px;
+  box-sizing: content-box;
 }
 
 .nav__menu {
@@ -829,7 +841,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
 .lead-text p { margin: 0 0 24px; }
 .lead-text p:last-child { margin-bottom: 0; }
 
-.prose { font-size: 16px; line-height: 1.75; color: var(--ink-mid); }
+.prose { font-size: 17.5px; line-height: 1.75; color: var(--ink-mid); }
 .prose p { margin: 0 0 18px; }
 .prose p:last-child { margin-bottom: 0; }
 .prose h3 {
@@ -1378,23 +1390,24 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
   text-transform: uppercase;
   color: var(--ink-soft);
 }
-.location__list dd { margin: 0; font-size: 15px; color: var(--ink); line-height: 1.55; }
+.location__list dd { margin: 0; font-size: 16.5px; color: var(--ink); line-height: 1.6; }
 .location__list dd a {
   border-bottom: 1px solid transparent;
   transition: border-color .3s var(--ease), color .3s var(--ease);
 }
 .location__list dd a:hover { color: var(--gold-dark); border-bottom-color: var(--gold); }
-.location__list .muted { color: var(--ink-soft); font-size: 13.5px; }
+.location__list .muted { color: var(--ink-soft); font-size: 14.5px; }
 
 .location__hint {
   margin-top: 28px;
   padding-top: 24px;
   border-top: 1px dashed var(--line);
-  font-size: 13.5px;
+  font-size: 15px;
+  line-height: 1.65;
   color: var(--ink-soft);
   font-style: italic;
 }
-.location__about { font-size: 15px; line-height: 1.7; color: var(--ink-mid); margin: 0 0 18px; }
+.location__about { font-size: 16.5px; line-height: 1.7; color: var(--ink-mid); margin: 0 0 18px; }
 .location__map {
   margin-top: 24px;
   border: 1px solid var(--line);
@@ -1745,7 +1758,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
   border: 1px solid var(--line);
   color: var(--ink-mid);
 }
-.team-lead__bio { font-size: 15px; line-height: 1.7; color: var(--ink-mid); margin: 0; }
+.team-lead__bio { font-size: 16.5px; line-height: 1.7; color: var(--ink-mid); margin: 0; }
 .team-lead__bio em { color: var(--ink-soft); font-style: italic; }
 
 .team-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
@@ -2678,7 +2691,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
   position: relative;
   z-index: 1;
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 500;
   letter-spacing: .25em;
   text-transform: uppercase;
@@ -3009,7 +3022,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
   max-width: 1100px;
 }
 .page-hero__lead-grid p {
-  font-size: clamp(15px, 1.2vw, 17px);
+  font-size: clamp(16.5px, 1.3vw, 18px);
   line-height: 1.75;
   color: var(--ink-mid);
   margin: 0;
@@ -3038,7 +3051,7 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
 .info-box__label {
   display: block;
   font-family: var(--sans);
-  font-size: 10.5px;
+  font-size: 12px;
   font-weight: 500;
   letter-spacing: .22em;
   text-transform: uppercase;
@@ -3064,8 +3077,8 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
   list-style: none;
   padding: 0;
   margin: 0;
-  font-size: 14px;
-  line-height: 1.65;
+  font-size: 15.5px;
+  line-height: 1.7;
   color: var(--ink-mid);
 }
 .info-box__list li {
@@ -3119,7 +3132,8 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
 .info-box__row-what {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 16px;
+  font-size: 17.5px;
+  line-height: 1.5;
   color: var(--ink);
 }
 .info-box__row--alert .info-box__row-when { color: #c44a2a; }
@@ -3603,11 +3617,11 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
 }
 .pullout-stat__text {
   font-family: var(--sans);
-  font-size: 15px;
+  font-size: 16.5px;
   line-height: 1.7;
   color: var(--ink-mid);
   font-weight: 300;
-  max-width: 480px;
+  max-width: 520px;
   margin: 0 auto 24px;
 }
 
@@ -3864,7 +3878,7 @@ a:focus-visible, button:focus-visible {
 }
 .urgency__mark {
   font-family: var(--sans);
-  font-size: 11px;
+  font-size: 12.5px;
   font-weight: 500;
   letter-spacing: .22em;
   text-transform: uppercase;
@@ -3875,8 +3889,8 @@ a:focus-visible, button:focus-visible {
 .urgency__text {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 16px;
-  line-height: 1.55;
+  font-size: 18.5px;
+  line-height: 1.6;
   color: var(--ink);
   margin: 0;
 }
@@ -4141,8 +4155,8 @@ a:focus-visible, button:focus-visible {
   /* HINT-DARK: kleinere Marke + Padding */
   .hint-dark { padding: 32px 24px 32px 64px !important; }
   .hint-dark__mark { font-size: 44px !important; }
-  .hint-dark__label { font-size: 10px; }
-  .hint-dark__body { font-size: 15px; line-height: 1.55; }
+  .hint-dark__label { font-size: 11.5px; }
+  .hint-dark__body { font-size: 16.5px; line-height: 1.6; }
 
   /* METRICS-Reihe: tighter */
   .metrics { gap: 20px; }
@@ -4158,12 +4172,12 @@ a:focus-visible, button:focus-visible {
 
   /* URGENCY-Banner kompakter */
   .urgency { padding: 16px 18px; gap: 12px; flex-direction: column; align-items: flex-start; }
-  .urgency__mark { font-size: 9.5px; }
-  .urgency__text { font-size: 14.5px; line-height: 1.55; }
+  .urgency__mark { font-size: 11px; }
+  .urgency__text { font-size: 16.5px; line-height: 1.6; }
 
   /* LEAD-GRID & PROSE engere Abstände */
-  .lead-text { font-size: 16.5px !important; line-height: 1.65 !important; }
-  .prose p { font-size: 14.5px; line-height: 1.65; margin-bottom: 12px; }
+  .lead-text { font-size: 17.5px !important; line-height: 1.65 !important; }
+  .prose p { font-size: 16px; line-height: 1.65; margin-bottom: 12px; }
 
   /* CTA-BLOCK kompakter */
   .cta-block__title { font-size: 28px !important; line-height: 1.1; margin-bottom: 12px; }
