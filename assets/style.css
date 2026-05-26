@@ -3878,19 +3878,19 @@ a:focus-visible, button:focus-visible {
 }
 .urgency__mark {
   font-family: var(--sans);
-  font-size: 14px;
+  font-size: 15px;
   font-weight: 500;
   letter-spacing: .22em;
   text-transform: uppercase;
   color: var(--gold-dark);
-  margin: 6px 0 0;
+  margin: 8px 0 0;
   white-space: nowrap;
 }
 .urgency__text {
   font-family: var(--serif);
   font-style: italic;
-  font-size: 22px;
-  line-height: 1.6;
+  font-size: 26px;
+  line-height: 1.55;
   color: var(--ink);
   margin: 0;
 }
@@ -4171,9 +4171,9 @@ a:focus-visible, button:focus-visible {
   .mega-tl-item__detail { font-size: 13.5px !important; line-height: 1.5 !important; }
 
   /* URGENCY-Banner kompakter */
-  .urgency { padding: 18px 20px; gap: 12px; flex-direction: column; align-items: flex-start; }
-  .urgency__mark { font-size: 12.5px; }
-  .urgency__text { font-size: 18.5px; line-height: 1.6; }
+  .urgency { padding: 20px 22px; gap: 14px; flex-direction: column; align-items: flex-start; }
+  .urgency__mark { font-size: 13.5px; }
+  .urgency__text { font-size: 20px; line-height: 1.55; }
 
   /* LEAD-GRID & PROSE engere Abstände */
   .lead-text { font-size: 17.5px !important; line-height: 1.65 !important; }
