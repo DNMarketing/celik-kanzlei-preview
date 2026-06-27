@@ -10,6 +10,7 @@
   document.addEventListener('DOMContentLoaded', () => {
     initYear();
     initNav();
+    initBrandToTop();
     initBurger();
     initDropdown();
     initActiveNav();
@@ -202,6 +203,22 @@
     };
     update();
     window.addEventListener('scroll', update, { passive: true });
+  }
+
+  // Logo/Brand: Wenn man bereits auf der Startseite ist, kein Reload —
+  // stattdessen sanft an den Seitenanfang scrollen.
+  function initBrandToTop() {
+    const brand = $('.nav__brand');
+    if (!brand) return;
+    const page = (location.pathname.split('/').pop() || 'index.html').toLowerCase();
+    const isHome = page === '' || page === 'index.html';
+    if (!isHome) return;
+    brand.addEventListener('click', (e) => {
+      e.preventDefault();
+      const reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+      window.scrollTo({ top: 0, behavior: reduce ? 'auto' : 'smooth' });
+      if (history.replaceState) history.replaceState(null, '', location.pathname + location.search);
+    });
   }
 
   function initBurger() {
