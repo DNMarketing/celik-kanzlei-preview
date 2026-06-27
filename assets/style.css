@@ -1538,6 +1538,31 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
 .location__map .leaflet-control-attribution { display: none !important; }
 .location__map .leaflet-control-zoom { display: none !important; }
 
+/* Karte: Klick-zum-Laden (Datenschutz – OSM/CARTO lädt erst nach Einwilligung) */
+.map-consent {
+  position: absolute;
+  inset: 0;
+  z-index: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 16px;
+  padding: 28px;
+  text-align: center;
+  background: var(--bg-soft);
+  cursor: default;
+}
+.map-consent__text {
+  max-width: 36ch;
+  margin: 0;
+  font-size: 13px;
+  line-height: 1.55;
+  color: var(--ink-soft);
+}
+.map-consent__text a { color: #9a7b3f; text-decoration: underline; }
+.map-consent__btn { cursor: pointer; }
+
 /* Custom Pin */
 .custom-pin {
   background: transparent !important;

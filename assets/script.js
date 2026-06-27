@@ -96,27 +96,52 @@
     els.forEach(el => io.observe(el));
   }
 
+  // Datenschutz: Karte (Leaflet + OpenStreetMap/CARTO) wird NICHT automatisch
+  // geladen, sondern erst nach ausdrücklichem Klick des Besuchers. Vorher
+  // verlässt keine IP-Adresse den Browser an die Kartendienste.
   function initMaps() {
-    if (typeof L === 'undefined') {
-      // Leaflet noch nicht geladen — defer-Script könnte später kommen
-      const containers = $$('.location__map[id^="map-"]');
-      if (containers.length === 0) return;
-      // Warten bis L verfügbar
-      const wait = setInterval(() => {
-        if (typeof L !== 'undefined') {
-          clearInterval(wait);
-          mountMaps();
-        }
-      }, 80);
-      setTimeout(() => clearInterval(wait), 8000);
-      return;
+    const containers = $$('.location__map[id^="map-"]');
+    if (containers.length === 0) return;
+
+    containers.forEach((el) => {
+      const consent = document.createElement('div');
+      consent.className = 'map-consent';
+      consent.innerHTML =
+        '<p class="map-consent__text">Zum Schutz Ihrer Daten wird die Karte erst auf Klick geladen. ' +
+        'Dabei wird Ihre IP-Adresse an OpenStreetMap/CARTO übertragen. Details in der ' +
+        '<a href="datenschutz.html">Datenschutzerklärung</a>.</p>' +
+        '<button type="button" class="btn btn--primary map-consent__btn">Karte laden</button>';
+      el.appendChild(consent);
+      consent.querySelector('.map-consent__btn').addEventListener('click', loadLeafletAndMount);
+    });
+  }
+
+  let leafletPromise = null;
+  function loadLeafletAndMount() {
+    if (typeof L !== 'undefined') { mountMaps(); return; }
+    if (!leafletPromise) {
+      leafletPromise = new Promise((resolve, reject) => {
+        const css = document.createElement('link');
+        css.rel = 'stylesheet';
+        css.href = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.css';
+        css.integrity = 'sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=';
+        css.crossOrigin = '';
+        document.head.appendChild(css);
+        const js = document.createElement('script');
+        js.src = 'https://unpkg.com/leaflet@1.9.4/dist/leaflet.js';
+        js.integrity = 'sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=';
+        js.crossOrigin = '';
+        js.onload = resolve;
+        js.onerror = reject;
+        document.head.appendChild(js);
+      });
     }
-    mountMaps();
+    leafletPromise.then(mountMaps).catch(() => showToast('Karte konnte nicht geladen werden.'));
   }
 
   function mountMaps() {
     const containers = $$('.location__map[id^="map-"]');
-    if (containers.length === 0) return;
+    if (containers.length === 0 || typeof L === 'undefined') return;
 
     const goldPin = L.divIcon({
       className: 'custom-pin',
@@ -126,9 +151,14 @@
     });
 
     containers.forEach((el) => {
+      if (el.dataset.mapMounted) return;
       const lat = parseFloat(el.dataset.mapLat);
       const lng = parseFloat(el.dataset.mapLng);
       if (Number.isNaN(lat) || Number.isNaN(lng)) return;
+
+      const consent = el.querySelector('.map-consent');
+      if (consent) consent.remove();
+      el.dataset.mapMounted = '1';
 
       const map = L.map(el, {
         center: [lat, lng],
