@@ -1,0 +1,13 @@
+{
+  "name": "kanzlei-celik-website",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Website der Rechtsanwaltskanzlei Celik — statisches HTML + Netlify-Funktion fuer das Kontaktformular (SMTP-Versand ueber das eigene Postfach).",
+  "scripts": {
+    "dev": "netlify dev"
+  },
+  "dependencies": {
+    "busboy": "^1.6.0",
+    "nodemailer": "^6.9.14"
+  }
+}

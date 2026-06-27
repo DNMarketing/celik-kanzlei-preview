@@ -1,0 +1,18 @@
+# Netlify-Konfiguration für die Kanzlei-Celik-Website
+# Statisches HTML im Repo-Root + eine Serverless-Funktion für den Mailversand.
+
+[build]
+  # Kein Build-Step nötig (reines HTML/CSS/JS). Netlify installiert dennoch
+  # automatisch die npm-Abhängigkeiten und bundlet daraus die Funktion.
+  publish = "."
+  functions = "netlify/functions"
+
+[functions]
+  node_bundler = "esbuild"
+
+# Saubere URL: /danke statt /danke.html funktioniert ohnehin,
+# hier nur als Sicherheit der direkte Treffer.
+[[redirects]]
+  from = "/danke"
+  to = "/danke.html"
+  status = 200

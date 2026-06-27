@@ -61,44 +61,69 @@ grep -rn "KUNDE FÜLLT EIN" *.html
 
 1. **Datenschutzerklärung** — der aktuelle Text ist ein Standard-Gerüst. Anwaltskanzleien haben besondere Anforderungen (Mandatsdaten, Schweigepflicht, Auftragsverarbeitung des Hosters). Empfehlung: durch eRecht24-Generator oder einen IT-Anwalt prüfen lassen.
 2. **Impressum** — auf Vollständigkeit prüfen, insbesondere Berufshaftpflichtversicherung und Kammerzuordnung.
-3. **Mandanten-Upload-Formular** — derzeit Frontend-Mock. Bevor live gehen: Backend-Endpoint anlegen (z.B. Netlify Forms mit File-Uploads, oder eigener PHP/Node-Endpoint mit verschlüsselter Speicherung). Datenschutzrechtlich besonders sensibel.
-4. **Kontaktformular** — derselbe Punkt. Aktuell zeigt es nur einen Erfolgs-Toast.
+3. **Kontakt-/Mandantenformular** — verschickt jede Anfrage **direkt per E-Mail** an `kanzlei@steuer-recht-celik.de` über eine **eigene Serverless-Funktion** (`netlify/functions/contact.js`) mit SMTP-Versand über das Kanzlei-Postfach. **Kein Netlify Forms, kein Drittanbieter.** Hochgeladene Dokumente werden als echte E-Mail-Anhänge mitgeschickt. Antwort-an ist die E-Mail des Absenders. Datenschutzerklärung sollte den Hoster (Netlify) als Auftragsverarbeiter nennen.
 5. **OpenStreetMap-Embeds** — datenschutzfreundlich (kein Cookie-Banner nötig). Falls Google Maps gewünscht: Cookie-Consent-Banner notwendig.
 
 ---
 
-## Deployment auf Netlify
+## Deployment auf Netlify (mit Mail-Funktion)
 
-### Variante 1 — Drag-and-Drop (am einfachsten)
+Das Kontaktformular nutzt eine **Serverless-Funktion** (`netlify/functions/contact.js`).
+Funktionen brauchen einen Build/Bundling-Schritt — **reines Drag-and-Drop reicht NICHT**.
+Empfohlen: **GitHub + Netlify** (wie dnmarketing.de) mit automatischem Deploy.
 
-1. Auf https://app.netlify.com/drop gehen
-2. Den kompletten Ordner `celik-website/` ins Browserfenster ziehen
-3. Netlify gibt eine URL aus (`xyz.netlify.app`)
-4. Custom Domain `steuer-recht-celik.de` unter Settings → Domain management hinzufügen
-5. DNS auf Netlify umstellen (oder CNAME setzen, je nach DNS-Provider)
-
-### Variante 2 — via CLI
-
+### Schritt 1 — Repo zu GitHub
 ```bash
-npm i -g netlify-cli
-cd ~/Desktop/celik-website
-netlify deploy --prod --dir .
+git add -A && git commit -m "Kontaktformular: SMTP-Mailversand via Netlify-Funktion"
+git push    # in ein GitHub-Repo
 ```
 
-(Vorher `netlify login` falls noch nicht authentifiziert.)
+### Schritt 2 — Netlify mit dem Repo verbinden
+Netlify → **Add new project → Import from GitHub** → das Repo wählen.
+Build-Einstellungen (kommen automatisch aus `netlify.toml`):
+- **Build command:** *(leer)*
+- **Publish directory:** `.`
+- **Functions directory:** `netlify/functions`
 
-### Variante 3 — Git-Push (für späteren Workflow)
+Netlify installiert dann automatisch die npm-Abhängigkeiten (nodemailer, busboy)
+und bundlet daraus die Funktion.
 
-Repo auf GitHub anlegen, im Netlify-Dashboard mit Repo verbinden, automatisches Deploy bei jedem Push.
+### Schritt 3 — SMTP-Zugangsdaten als Environment-Variablen setzen (PFLICHT)
+Netlify → Site → **Project configuration → Environment variables** → folgende anlegen
+(Werte aus dem Strato-Postfach, **niemals in den Code committen**):
+
+| Variable    | Wert (Beispiel Strato)                  |
+|-------------|------------------------------------------|
+| `SMTP_HOST` | `smtp.strato.de`                         |
+| `SMTP_PORT` | `465`                                     |
+| `SMTP_USER` | `kanzlei@steuer-recht-celik.de`          |
+| `SMTP_PASS` | *(Passwort des Postfachs)*                |
+| `MAIL_TO`   | `kanzlei@steuer-recht-celik.de` (optional)|
+| `MAIL_CC`   | `contact@dnmarketing.de` (optional)       |
+
+Nach dem Setzen einmal **neu deployen** (Deploys → Trigger deploy), damit die
+Variablen greifen.
+
+### Schritt 4 — Testen
+Formular auf der `*.netlify.app`-URL ausfüllen (inkl. Datei) und absenden →
+Weiterleitung auf `danke.html` + Mail im Kanzlei-Postfach.
+
+### Lokal testen (optional)
+```bash
+npm install
+npm i -g netlify-cli   # einmalig
+netlify dev            # startet Seite + Funktion lokal, .env für SMTP_* nutzen
+```
 
 ---
 
 ## Was nach Deploy zu machen ist
 
-1. **Backup der alten Site** (steuer-recht-celik.de) per FTP ziehen, bevor du die Domain umstellst
-2. **Formulare verbinden** — entweder Netlify Forms aktivieren (in HTML `data-netlify="true"` ergänzen, dann läuft Submit gegen Netlify-Backend) oder eigenen Endpoint
-3. **Datenschutz-Anpassungen**, sobald Hosting-Anbieter klar (steht ja erst nach Deploy fest)
-4. **Suchmaschinen-Indexierung** — `robots.txt` und `sitemap.xml` ergänzen (kann auch nachgereicht werden)
+1. **Backup der alten Site** (steuer-recht-celik.de) per FTP von Strato ziehen, bevor du die Domain umstellst
+2. **SMTP-Env-Variablen gesetzt?** (siehe oben, Schritt 3) — sonst kommt keine Mail an
+3. **Domain umstellen:** in Netlify `steuer-recht-celik.de` als Custom Domain hinzufügen, im **Strato-DNS** A-Record `@` → `75.2.60.5` und CNAME `www` → `<site>.netlify.app`. **MX-Einträge (Postfach!) NICHT anfassen.**
+4. **Datenschutz-Anpassungen** (Netlify als Auftragsverarbeiter nennen)
+5. **Suchmaschinen-Indexierung** — `robots.txt` und `sitemap.xml` ergänzen (kann auch nachgereicht werden)
 
 ---
 

@@ -370,7 +370,7 @@
     const btn  = $('#submitBtn');
     if (!form || !btn) return;
 
-    form.addEventListener('submit', (e) => {
+    form.addEventListener('submit', async (e) => {
       e.preventDefault();
 
       const data = new FormData(form);
@@ -387,19 +387,33 @@
         return;
       }
 
-      const orig = btn.textContent;
-      btn.textContent = 'Übermittelt — Vielen Dank';
-      btn.classList.add('is-success');
-      btn.disabled = true;
-      showToast('Ihre Anfrage wurde übermittelt. Wir melden uns innerhalb eines Werktags.');
+      // Honeypot: wenn ausgefüllt, still abbrechen (Bot).
+      if (String(data.get('bot-field') || '').trim()) return;
 
-      setTimeout(() => {
-        form.reset();
-        if (window.__celikFilesReset) window.__celikFilesReset();
+      // Per Drag-and-Drop ausgewählte Dateien aus dem JS-Puffer anhängen
+      // (das native <input type="file"> bleibt bei Drag-and-Drop leer).
+      data.delete('files');
+      const picked = (window.__celikFiles && window.__celikFiles()) || [];
+      picked.forEach((f) => data.append('files', f, f.name));
+
+      const orig = btn.textContent;
+      btn.textContent = 'Wird gesendet …';
+      btn.disabled = true;
+
+      try {
+        // Eigene Serverless-Funktion → verschickt die Mail per SMTP über das
+        // Kanzlei-Postfach. Kein Drittanbieter, kein Netlify Forms.
+        const res = await fetch('/.netlify/functions/contact', {
+          method: 'POST',
+          body: data,
+        });
+        if (!res.ok) throw new Error('HTTP ' + res.status);
+        window.location.href = 'danke.html';
+      } catch (err) {
         btn.textContent = orig;
-        btn.classList.remove('is-success');
         btn.disabled = false;
-      }, 3500);
+        showToast('Übermittlung fehlgeschlagen. Bitte später erneut versuchen oder per E-Mail an kanzlei@steuer-recht-celik.de.');
+      }
     });
   }
 

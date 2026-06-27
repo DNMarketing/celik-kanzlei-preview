@@ -3,3 +3,7 @@ _research/
 *.bak
 .playwright-mcp/
 mobile-*.png
+node_modules/
+.netlify/
+.env
+.env.*
