@@ -4332,3 +4332,15 @@ a:focus-visible, button:focus-visible {
   .focus__card, .location, .mandant__form, .team-lead__card, .team-card, .workflow-big__card { box-shadow: none; border: 1px solid #ccc; }
   a { color: #000; text-decoration: underline; }
 }
+
+/* ============ CCM19 Cookie-Banner ============ */
+/* Banner garantiert ueber allem (Nav z-index 110, Grain/Toast 999) +
+   echte Maus sichtbar + sauberes Box-Modell. Die Position/Zentrierung
+   selbst wird im CCM19-Dashboard (Layout) eingestellt. */
+[id^="ccm"], [class*="ccm"] { box-sizing: border-box; }
+#ccm-widget, #ccm-control-panel, [id^="ccm19"],
+[class*="ccm-widget"], [class*="ccm19"] {
+  z-index: 2147483000 !important;
+}
+/* Echte Maus auf dem Banner immer sichtbar (auch falls global versteckt) */
+#ccm-widget, #ccm-control-panel, [class*="ccm-widget"] { cursor: auto !important; }
