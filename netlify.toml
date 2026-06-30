@@ -10,6 +10,23 @@
 [functions]
   node_bundler = "esbuild"
 
+# Sicherheits-Header (rein serverseitig, für Besucher unsichtbar, kein Einfluss
+# auf Optik/Performance). Bewusst OHNE Content-Security-Policy, um Cookie-Banner
+# (CCM19) und OpenStreetMap-Karte nicht zu beeinträchtigen.
+[[headers]]
+  for = "/*"
+  [headers.values]
+    # Erzwingt HTTPS im Browser (Schutz vor Downgrade / Man-in-the-Middle)
+    Strict-Transport-Security = "max-age=31536000; includeSubDomains"
+    # Verhindert Einbettung in fremde Frames (Clickjacking-Schutz)
+    X-Frame-Options = "SAMEORIGIN"
+    # Browser darf MIME-Typen nicht "erraten" (Schutz vor Content-Sniffing)
+    X-Content-Type-Options = "nosniff"
+    # Gibt beim Verlassen der Seite keine vollständige URL als Referrer preis
+    Referrer-Policy = "strict-origin-when-cross-origin"
+    # Schaltet ungenutzte Browser-Funktionen aus
+    Permissions-Policy = "geolocation=(), camera=(), microphone=(), payment=(), usb=()"
+
 # Saubere URL: /danke statt /danke.html funktioniert ohnehin,
 # hier nur als Sicherheit der direkte Treffer.
 [[redirects]]
