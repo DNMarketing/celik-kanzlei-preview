@@ -24,8 +24,15 @@
     X-Content-Type-Options = "nosniff"
     # Gibt beim Verlassen der Seite keine vollständige URL als Referrer preis
     Referrer-Policy = "strict-origin-when-cross-origin"
-    # Schaltet ungenutzte Browser-Funktionen aus
-    Permissions-Policy = "geolocation=(), camera=(), microphone=(), payment=(), usb=()"
+    # Schaltet ungenutzte Browser-Funktionen und die Werbe-/Tracking-APIs des
+    # Browsers (FLoC, Topics, Attribution, FLEDGE, Shared Storage) aus.
+    Permissions-Policy = "geolocation=(), camera=(), microphone=(), payment=(), usb=(), interest-cohort=(), browsing-topics=(), attribution-reporting=(), join-ad-interest-group=(), run-ad-auction=(), shared-storage=(), shared-storage-select-url=(), private-state-token-issuance=(), private-state-token-redemption=()"
+    # Isoliert das Fenster kryptografisch — kein Zugriff via window.opener
+    Cross-Origin-Opener-Policy = "same-origin"
+    # Verhindert, dass fremde Seiten unsere Ressourcen (Bilder/Skripte) einbetten
+    Cross-Origin-Resource-Policy = "same-site"
+    # Kein proaktives DNS-Prefetching zu externen Hosts ohne Nutzeraktion
+    X-DNS-Prefetch-Control = "off"
 
 # Saubere URL: /danke statt /danke.html funktioniert ohnehin,
 # hier nur als Sicherheit der direkte Treffer.

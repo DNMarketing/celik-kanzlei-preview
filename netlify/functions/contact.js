@@ -2,6 +2,16 @@
 // Anfrage als formatierte E-Mail über das eigene Postfach (SMTP, Strato).
 // Kein Drittanbieter, kein Netlify Forms — die Mail geht direkt an die Kanzlei.
 //
+// Datenschutz-Prinzipien dieser Funktion:
+//   - Es werden AUSSCHLIESSLICH die vom Nutzer eingegebenen Formularfelder
+//     verarbeitet. Die Funktion liest KEINE Netzwerk-Header (kein
+//     x-forwarded-for, client-ip, user-agent) und speichert diese NICHT.
+//   - Es findet KEIN persistentes Logging statt. `console.error` wird nur
+//     bei technischen SMTP-/Konfigurationsfehlern aufgerufen und enthält
+//     keine Besucher-Identifikatoren.
+//   - Keine Datenbank, kein externer Dienst — die Formulardaten verlassen
+//     Netlify direkt in Richtung des SMTP-Postfachs der Kanzlei.
+//
 // Benötigte Environment-Variablen (im Netlify-Dashboard setzen, NICHT im Code):
 //   SMTP_HOST   z.B. smtp.strato.de
 //   SMTP_PORT   z.B. 465
