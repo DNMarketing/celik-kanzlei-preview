@@ -1840,26 +1840,9 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
   aspect-ratio: 1;
   background: var(--bg-deep);
   overflow: hidden;
+  border: 3px solid var(--gold);
 }
 .team-lead__avatar img { width: 100%; height: 100%; object-fit: cover; filter: contrast(1.02) saturate(.95); }
-.team-lead__avatar::before {
-  content: "";
-  position: absolute;
-  top: -1px; left: -1px;
-  width: 36px; height: 36px;
-  border-top: 2px solid var(--gold);
-  border-left: 2px solid var(--gold);
-  z-index: 2;
-}
-.team-lead__avatar::after {
-  content: "";
-  position: absolute;
-  bottom: -1px; right: -1px;
-  width: 36px; height: 36px;
-  border-bottom: 2px solid var(--gold);
-  border-right: 2px solid var(--gold);
-  z-index: 2;
-}
 .team-lead__name {
   font-family: var(--serif);
   font-weight: 400;
