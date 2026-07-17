@@ -1845,20 +1845,22 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="search"]
 .team-lead__avatar::before {
   content: "";
   position: absolute;
-  top: -1px; left: -1px;
-  width: 36px; height: 36px;
-  border-top: 2px solid var(--gold);
-  border-left: 2px solid var(--gold);
+  top: 0; left: 0;
+  width: 42px; height: 42px;
+  border-top: 3px solid var(--gold);
+  border-left: 3px solid var(--gold);
   z-index: 2;
+  pointer-events: none;
 }
 .team-lead__avatar::after {
   content: "";
   position: absolute;
-  bottom: -1px; right: -1px;
-  width: 36px; height: 36px;
-  border-bottom: 2px solid var(--gold);
-  border-right: 2px solid var(--gold);
+  bottom: 0; right: 0;
+  width: 42px; height: 42px;
+  border-bottom: 3px solid var(--gold);
+  border-right: 3px solid var(--gold);
   z-index: 2;
+  pointer-events: none;
 }
 .team-lead__name {
   font-family: var(--serif);
